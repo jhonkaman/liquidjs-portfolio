@@ -1,0 +1,129 @@
+---
+layout: layout.liquid
+title: Eleventy Portfolio
+---
+
+<div class="container">
+  {% comment %} <h1>Eleventy Portfolio</h1>
+  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aliquid similique numquam officiis tenetur amet, quam doloremque illo ex sint, ab a corrupti assumenda dolore nemo fuga! Nostrum pariatur aliquid blanditiis.</p> {% endcomment %}
+
+{% comment %} <ul>
+{% for post in collections.post %}
+  <li><a href="{{ post.url }}">{{ post.data.title }}</a></li>
+{% endfor %}
+</ul> {% endcomment %}
+</div>
+
+<div class="container text-center pt-5">
+    <h1 class="display-1">Hello World Corp</h1>
+    <img src="https://placehold.co/600x400" alt="" class="img-fluid">
+    <p class="lead text-muted">A Bootstrap 5 demo site.</p>
+    <a href="#" class="btn btn-dark btn-lg">Sign Up</a>
+    <a href="#" class="btn btn-outline-dark btn-lg">Learn More</a>
+  </div>
+
+
+
+<!-- FEATURES -->
+<section class="container pt-5">
+  <h2 id="features" class="display-3">Features</h2>
+  <div class="row">
+    <div class="col-lg">
+      <h3>Eleventy</h3>
+      <p class="text-start">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit minima reiciendis veniam, doloremque quas sequi ratione facere eveniet labore velit, perferendis ullam error officia. At dolorem excepturi voluptate accusantium. In.</p>
+    </div>
+
+    <div class="col-md">
+      <h3>Nunjucks</h3>
+      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum optio natus! Aperiam modi voluptas iure minima cumque beatae culpa ex dicta sunt provident. Consectetur illo doloribus exercitationem voluptates modi?</p>
+    </div>
+
+    <div class="col-md">
+      <h3>Bootstrap 5</h3>
+      <p class="text-start">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi nostrum optio natus! Aperiam modi voluptas iure minima cumque beatae culpa ex dicta sunt provident. Consectetur illo doloribus exercitationem voluptates modi?</p>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- FAQ -->
+<section class="container pt-5">
+  <h2 id="faq" class="display-3">FAQ</h2>
+  <div class="accordion" id="accordionExample">
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed focus-ring focus-ring-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+          Accordion Item #1
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed focus-ring focus-ring-dark" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Accordion Item #2
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed focus-ring focus-ring-dark " type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Accordion Item #3
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+        <div class="accordion-body">
+          <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<div class="container pt-5">
+  <h2 id="contact" class="display-3">Contact</h2>
+  <div class="row justify-content-center">
+    <div class="col-lg-10">
+      <form action="" method="post">
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control focus-ring focus-ring-dark" id="name" placeholder="John Smith" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" class="form-control focus-ring focus-ring-dark" id="email" placeholder="john@example.com" required>
+        </div>
+
+        <div class="mb-3">
+          <label for="department" class="form-label">Department</label>
+          <select id="department" class="form-select" aria-label="Default select example">
+            <option value="sales">Sales</option>
+            <option value="tech">Tech Support</option>
+            <option value="other">Other</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="message" class="form-label">Message</label>
+          <textarea class="form-control focus-ring focus-ring-dark" id="message" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
