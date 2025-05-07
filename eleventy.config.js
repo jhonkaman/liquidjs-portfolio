@@ -5,6 +5,11 @@ export default function(eleventyConfig) {
   eleventyConfig.setInputDirectory("views");
   eleventyConfig.addPassthroughCopy("views/assets");
   eleventyConfig.addPassthroughCopy({ "views/_meta": "/" });
+	eleventyConfig.addPreprocessor("drafts", "*", (data, content) => {
+		if(data.draft && process.env.ELEVENTY_RUN_MODE === "build") {
+			return false;
+		}
+	});
   eleventyConfig.addPlugin(feedPlugin, {
 		type: "atom", // or "rss", "json"
 		outputPath: "/feed.xml",
