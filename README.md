@@ -10,3 +10,4 @@ This project also includes the following features:
 - Favicon
 - robots.txt
 - sitemap.xml
+- Atom/RSS feed
